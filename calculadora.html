@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="main">
+            <h1>Calculadora</h1>
+            <div id="tela">
+                <p onclick="calcular()" id="resultado"></p>
+            </div>
+            <div id="botoes">
+                <div id="numeros">
+                    <button onclick="addValor('1')"  class="numero" >1</button>
+                    <button onclick="addValor('2')"  class="numero" >2</button>
+                    <button onclick="addValor('3')"  class="numero" >3</button>
+                    <button onclick="addValor('4')"  class="numero" >4</button>
+                    <button onclick="addValor('5')"  class="numero" >5</button>
+                    <button onclick="addValor('6')"  class="numero" >6</button>
+                    <button onclick="addValor('7')"  class="numero" >7</button>
+                    <button onclick="addValor('8')"  class="numero" >8</button>
+                    <button onclick="addValor('9')"  class="numero" >9</button>
+                    <button onclick="addValor('.')" class="numero" >.</button>
+                    <button onclick="addValor('0')"  class="numero" >0</button>
+                    <button onclick="clearScreen()" class="operacao">C</button>
+                </div>
+                <div id="operadores">
+                    <button onclick="addValor('+')" class="operacao" >+</button>
+                    <button onclick="addValor('-')" class="operacao" >-</button>
+                    <button onclick="addValor('*')" class="operacao" >*</button>
+                    <button onclick="addValor('/')" class="operacao" >÷</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
